@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation4</title>
+    <style>
+    body {
+        background-color: blue;
+        
+    }
+       
+       .ball {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #ffffff;
+        left: -30px;
+        top: 0px;
+        animation: movement 3s linear infinite;
+       }
+       
+       
+       @keyframes movement {
+        16%, 48%, 78% {
+            top: 300px;
+            animation-timing-function: ease-out;
+        }
+            32% {
+                top: 50px;
+                animation-timing-function: ease-in;
+            }
+            62% {
+                top: 150px;
+                animation-timing-function: ease-in;
+            }
+            90% {
+                top: 200px;
+                animation-timing-function: ease-in;
+            } 
+           100% {
+            top: 100%;
+            left: 100%;
+            animation-timing-function: ease-out;
+            transform: rotate(360deg);
+           }
+       }
+   
+    </style>
+</head>
+<body>
+   
+       
+    </div>
+    <div class="ball">
+    </div>
+</body>
+</html>
